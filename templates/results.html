@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="{{url_for('static', filename='update.js')}}">
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<br>
+<h1>Channel name : {{ name }}</h1>
+<h3>Subscribers : {{ subs }}</h3>
+
+<hr>
+<div>Process: Getting video urls....please wait..</div>
+<hr>
+<script>
+    window.onload = function(){
+    geturls();
+    };
+</script>
+
+</body>
+</html>

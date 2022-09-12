@@ -1,0 +1,19 @@
+<!doctype html>
+
+<div>
+    <h3>Video urls :</h3>
+    <ul>
+        {% for item in urls %}
+        <li>{{ item }} </li>
+        {% endfor %}
+    </ul>
+</div>
+<hr>
+<div>Above urls have been fetched successfully.<br> Click here to extract and save the data
+    :   <button onclick="savedata()">Save data</button>
+</div>
+<hr>
+<div id="info"></div>
+<hr>
+<div>Fetch details from the  database:   <button onclick="get_updates()">Fetch</button></div><hr>
+

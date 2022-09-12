@@ -1,0 +1,11 @@
+<!doctype html>
+
+{% for video in video_names %}
+<div>
+    Saved the following video :<br>
+        Video number : {{ idx }}
+        <b>{{ video }}</b>
+</div>
+<hr>
+{% set idx = idx + 1 %}
+{% endfor %}
