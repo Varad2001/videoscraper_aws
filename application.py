@@ -27,7 +27,7 @@ def get_driver():
     chrome_options.add_argument("--no-sandbox")
     #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),
         #                     chrome_options=chrome_options)
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver = webdriver.Chrome(executable_path = "/usr/bin/chromedriver.exe",chrome_options=chrome_options)
     return driver
 
 
