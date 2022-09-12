@@ -2,7 +2,8 @@ from db_ops import sql_ops
 from flask import request, render_template, Flask
 from selenium import webdriver
 from channel import Channel
-import os
+import sys
+sys.path.insert(0, "/usr/bin")
 import threading
 import logging
 logging.basicConfig(filename="video_scraper.log", level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s:%(message)s" )
