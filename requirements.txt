@@ -1,1 +1,6 @@
-flask
+mysql-connector-python
+flask==2.2.2
+selenium==4.4.3
+requests==2.28.1
+pymongo[srv]
+gunicorn
