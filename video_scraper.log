@@ -60,3 +60,47 @@ GET_VIDEO_URLS FUNCTION COMPLETE.
 
 root:INFO:2022-09-13 20:47:18,362:Rendering get_urls.html....
 werkzeug:INFO:2022-09-13 20:47:20,477:127.0.0.1 - - [13/Sep/2022 20:47:20] "POST /get_urls HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-13 21:05:59,388:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-13 21:05:59,388:[33mPress CTRL+C to quit[0m
+root:INFO:2022-09-13 21:06:03,277:
+application running....rendering index.html...
+werkzeug:INFO:2022-09-13 21:06:03,281:127.0.0.1 - - [13/Sep/2022 21:06:03] "GET / HTTP/1.1" 200 -
+root:INFO:2022-09-13 21:06:06,528:Getting input for channel name and number of videos...
+WDM:INFO:2022-09-13 21:06:06,529:====== WebDriver manager ======
+WDM:INFO:2022-09-13 21:06:06,699:Get LATEST chromedriver version for google-chrome None
+WDM:INFO:2022-09-13 21:06:07,172:Driver [C:\Users\DELL\.wdm\drivers\chromedriver\win32\105.0.5195\chromedriver.exe] found in cache
+root:INFO:2022-09-13 21:06:16,832:Getting channel info...
+root:INFO:2022-09-13 21:06:16,914:
+Create database request for CSER_Cambridge...
+root:INFO:2022-09-13 21:06:20,001:Database already exists, using it..
+root:INFO:2022-09-13 21:06:20,300:Table 'videodata' created.
+root:INFO:2022-09-13 21:06:20,324:Channel info complete.
+root:INFO:2022-09-13 21:06:20,324:Input for channel name and videos number received. Rendering results.html...
+werkzeug:INFO:2022-09-13 21:06:22,392:127.0.0.1 - - [13/Sep/2022 21:06:22] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-13 21:06:22,408:127.0.0.1 - - [13/Sep/2022 21:06:22] "[36mGET /static/update.js HTTP/1.1[0m" 304 -
+WDM:INFO:2022-09-13 21:06:22,440:====== WebDriver manager ======
+WDM:INFO:2022-09-13 21:06:22,633:Get LATEST chromedriver version for google-chrome None
+WDM:INFO:2022-09-13 21:06:22,964:Driver [C:\Users\DELL\.wdm\drivers\chromedriver\win32\105.0.5195\chromedriver.exe] found in cache
+root:INFO:2022-09-13 21:06:29,738:Getting channel info...
+root:INFO:2022-09-13 21:06:29,808:
+Create database request for CSER_Cambridge...
+root:INFO:2022-09-13 21:06:32,548:Database already exists, using it..
+root:INFO:2022-09-13 21:06:32,818:Table 'videodata' created.
+root:INFO:2022-09-13 21:06:32,819:Channel info complete.
+root:INFO:2022-09-13 21:06:32,819:
+GET_VIDEO_URLS:
+root:INFO:2022-09-13 21:06:36,194:Selecting option :Date added (newest)
+root:INFO:2022-09-13 21:06:38,728:Reached items tag...
+root:INFO:2022-09-13 21:06:38,728:Starting extraction ....
+root:INFO:2022-09-13 21:06:41,745:Found 60 elements ....
+root:INFO:2022-09-13 21:06:41,772:
+Video instance created successfully.
+root:INFO:2022-09-13 21:06:41,800:
+Video instance created successfully.
+root:INFO:2022-09-13 21:06:41,800:Extracted 2 videos. Complete.
+root:INFO:2022-09-13 21:06:41,800:
+GET_VIDEO_URLS FUNCTION COMPLETE.
+
+root:INFO:2022-09-13 21:06:41,800:Rendering get_urls.html....
+werkzeug:INFO:2022-09-13 21:06:43,828:127.0.0.1 - - [13/Sep/2022 21:06:43] "POST /get_urls HTTP/1.1" 200 -

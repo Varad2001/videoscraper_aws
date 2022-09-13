@@ -30,7 +30,7 @@ def get_driver():
     #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),
         #                     chrome_options=chrome_options)
     #driver = webdriver.Chrome(executable_path = "/usr/bin/chromedriver.exe",chrome_options=chrome_options)
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
     return driver
 
 
