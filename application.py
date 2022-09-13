@@ -55,14 +55,14 @@ def get_results():
         num = int(request.form['num'])
         try :
             # set up selenium webdriver
-            chrome_options = webdriver.ChromeOptions()
+            """chrome_options = webdriver.ChromeOptions()
             chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
             chrome_options.add_argument("--headless")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--no-sandbox")
             driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),
-                                      chrome_options=chrome_options)
-            #driver = get_driver()
+                                      chrome_options=chrome_options)"""
+            driver = get_driver()
 
             channel2 = Channel(url, driver)          # create a channel object instance
             channel2.get_channel_info(driver)        # get the channel details
