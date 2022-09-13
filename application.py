@@ -3,6 +3,7 @@ from flask import request, render_template, Flask
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from channel import Channel
+import os
 import sys
 sys.path.insert(0, "/usr/bin")
 import threading
@@ -23,14 +24,14 @@ counter = 0
 
 def get_driver():
     chrome_options = webdriver.ChromeOptions()
-    #chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
     #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),
         #                     chrome_options=chrome_options)
-    #driver = webdriver.Chrome(executable_path = "/usr/bin/chromedriver.exe",chrome_options=chrome_options)
-    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),chrome_options=chrome_options)
+    #driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
     return driver
 
 
