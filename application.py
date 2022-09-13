@@ -1,6 +1,7 @@
 from db_ops import sql_ops
 from flask import request, render_template, Flask
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from channel import Channel
 import sys
 sys.path.insert(0, "/usr/bin")
@@ -28,7 +29,8 @@ def get_driver():
     chrome_options.add_argument("--no-sandbox")
     #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),
         #                     chrome_options=chrome_options)
-    driver = webdriver.Chrome(executable_path = "/usr/bin/chromedriver.exe",chrome_options=chrome_options)
+    #driver = webdriver.Chrome(executable_path = "/usr/bin/chromedriver.exe",chrome_options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     return driver
 
 

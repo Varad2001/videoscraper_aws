@@ -89,9 +89,3 @@ def fetch_data(db_name, table_name):
     return results
 
 
-mydb = conn.connect(host=endpoint, user=user, passwd= passwd, port=port, ssl_ca='SSLCERTIFICATE')
-cursor = mydb.cursor()
-#cursor.execute("show databases")
-cursor.execute("use CERN_Lectures")
-cursor.execute("select * from videodata")
-print(cursor.fetchall())

@@ -1,0 +1,62 @@
+werkzeug:INFO:2022-09-13 20:44:36,251:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-13 20:44:36,251:[33mPress CTRL+C to quit[0m
+root:INFO:2022-09-13 20:45:23,975:
+application running....rendering index.html...
+werkzeug:INFO:2022-09-13 20:45:23,981:127.0.0.1 - - [13/Sep/2022 20:45:23] "GET / HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-13 20:45:24,186:127.0.0.1 - - [13/Sep/2022 20:45:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+root:INFO:2022-09-13 20:45:32,343:Getting input for channel name and number of videos...
+root:ERROR:2022-09-13 20:45:32,347:install() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/application.py", line 59, in get_results
+    driver = get_driver()
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/application.py", line 33, in get_driver
+    driver = webdriver.Chrome(ChromeDriverManager.install())
+TypeError: install() missing 1 required positional argument: 'self'
+werkzeug:INFO:2022-09-13 20:45:32,351:127.0.0.1 - - [13/Sep/2022 20:45:32] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-13 20:46:32,075:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-13 20:46:32,076:[33mPress CTRL+C to quit[0m
+root:INFO:2022-09-13 20:46:34,531:
+application running....rendering index.html...
+werkzeug:INFO:2022-09-13 20:46:34,535:127.0.0.1 - - [13/Sep/2022 20:46:34] "GET / HTTP/1.1" 200 -
+root:INFO:2022-09-13 20:46:38,107:Getting input for channel name and number of videos...
+WDM:INFO:2022-09-13 20:46:38,107:====== WebDriver manager ======
+WDM:INFO:2022-09-13 20:46:38,289:Get LATEST chromedriver version for google-chrome None
+WDM:INFO:2022-09-13 20:46:38,901:There is no [win32] chromedriver for browser None in cache
+WDM:INFO:2022-09-13 20:46:38,902:About to download new driver from https://chromedriver.storage.googleapis.com/105.0.5195.52/chromedriver_win32.zip
+WDM:INFO:2022-09-13 20:46:40,489:Driver has been saved in cache [C:\Users\DELL\.wdm\drivers\chromedriver\win32\105.0.5195]
+root:INFO:2022-09-13 20:46:50,801:Getting channel info...
+root:INFO:2022-09-13 20:46:50,881:
+Create database request for CSER_Cambridge...
+root:INFO:2022-09-13 20:46:53,850:Database already exists, using it..
+root:INFO:2022-09-13 20:46:54,136:Table 'videodata' created.
+root:INFO:2022-09-13 20:46:54,137:Channel info complete.
+root:INFO:2022-09-13 20:46:54,138:Input for channel name and videos number received. Rendering results.html...
+werkzeug:INFO:2022-09-13 20:46:56,214:127.0.0.1 - - [13/Sep/2022 20:46:56] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-13 20:46:56,484:127.0.0.1 - - [13/Sep/2022 20:46:56] "GET /static/update.js HTTP/1.1" 200 -
+WDM:INFO:2022-09-13 20:46:56,723:====== WebDriver manager ======
+WDM:INFO:2022-09-13 20:46:56,881:Get LATEST chromedriver version for google-chrome None
+WDM:INFO:2022-09-13 20:46:57,172:Driver [C:\Users\DELL\.wdm\drivers\chromedriver\win32\105.0.5195\chromedriver.exe] found in cache
+root:INFO:2022-09-13 20:47:05,382:Getting channel info...
+root:INFO:2022-09-13 20:47:05,473:
+Create database request for CSER_Cambridge...
+root:INFO:2022-09-13 20:47:08,270:Database already exists, using it..
+root:INFO:2022-09-13 20:47:08,540:Table 'videodata' created.
+root:INFO:2022-09-13 20:47:08,540:Channel info complete.
+root:INFO:2022-09-13 20:47:08,540:
+GET_VIDEO_URLS:
+root:INFO:2022-09-13 20:47:12,216:Selecting option :Date added (newest)
+root:INFO:2022-09-13 20:47:15,271:Reached items tag...
+root:INFO:2022-09-13 20:47:15,271:Starting extraction ....
+root:INFO:2022-09-13 20:47:18,302:Found 60 elements ....
+root:INFO:2022-09-13 20:47:18,331:
+Video instance created successfully.
+root:INFO:2022-09-13 20:47:18,362:
+Video instance created successfully.
+root:INFO:2022-09-13 20:47:18,362:Extracted 2 videos. Complete.
+root:INFO:2022-09-13 20:47:18,362:
+GET_VIDEO_URLS FUNCTION COMPLETE.
+
+root:INFO:2022-09-13 20:47:18,362:Rendering get_urls.html....
+werkzeug:INFO:2022-09-13 20:47:20,477:127.0.0.1 - - [13/Sep/2022 20:47:20] "POST /get_urls HTTP/1.1" 200 -

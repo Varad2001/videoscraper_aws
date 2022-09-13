@@ -3,4 +3,5 @@ flask
 selenium==4.4.3
 requests==2.28.1
 pymongo[srv]
+webdriver_manager
 gunicorn
