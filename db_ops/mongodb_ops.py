@@ -1,11 +1,18 @@
 import logging
+import os
+
 logging.basicConfig(filename="video_scraper.log", level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s:%(message)s" )
 import pymongo
+from dotenv import load_dotenv
+
 
 def insert_data(db_name, data):
     logging.info("Inseting data to Mongodb database %s.." % db_name)
     try :
-        client = pymongo.MongoClient("mongodb+srv://varadkhonde:yadneshkhonde@cluster0.zeesz.mongodb.net/?retryWrites=true&w=majority")
+        load_dotenv()
+        user = os.environ.get('USER')
+        passwd = os.environ.get('pass')
+        client = pymongo.MongoClient(f"mongodb+srv://{user}:{passwd}@cluster0.zeesz.mongodb.net/?retryWrites=true&w=majority")
     except Exception as e:
         logging.exception(e)
         raise e
@@ -26,9 +33,13 @@ def insert_data(db_name, data):
         client.close()
 
 def fetch_data(db_name, table_name):
-    logging.info("Fetching data from %s => %s.." %db_name %table_name)
+    logging.info("Fetching data from %s , %s..".format(db_name,table_name) )
     try :
-        client = pymongo.MongoClient("mongodb+srv://varadkhonde:yadneshkhonde@cluster0.zeesz.mongodb.net/?retryWrites=true&w=majority")
+        load_dotenv()
+        user = os.environ.get('USER')
+        passwd = os.environ.get('pass')
+        client = pymongo.MongoClient(
+            f"mongodb+srv://{user}:{passwd}@cluster0.zeesz.mongodb.net/?retryWrites=true&w=majority")
         db = client[db_name]
         table = db[table_name]
         data = table.find()

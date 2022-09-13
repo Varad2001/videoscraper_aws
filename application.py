@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from channel import Channel
 import os
 import sys
-sys.path.insert(0, "/usr/bin")
+sys.path.insert(0, "/usr/bin/chromedriver")
 import threading
 import logging
 logging.basicConfig(filename="video_scraper.log", level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s:%(message)s" )

@@ -1,0 +1,35 @@
+root:ERROR:2022-09-13 22:51:57,004:The "dnspython" module must be installed to use mongodb+srv:// URIs. To fix this error install pymongo with the srv extra:
+ C:\Users\DELL\anaconda3\envs\Videoscraper_aws\python.exe -m pip install "pymongo[srv]"
+Traceback (most recent call last):
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/db_ops/mongodb_ops.py", line 42, in fetch_data
+    f"mongodb+srv://{user}:{passwd}@cluster0.zeesz.mongodb.net/?retryWrites=true&w=majority")
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\pymongo\mongo_client.py", line 672, in __init__
+    connect_timeout=timeout)
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\pymongo\uri_parser.py", line 453, in parse_uri
+    '%s -m pip install "pymongo[srv]"' % (python_path))
+pymongo.errors.ConfigurationError: The "dnspython" module must be installed to use mongodb+srv:// URIs. To fix this error install pymongo with the srv extra:
+ C:\Users\DELL\anaconda3\envs\Videoscraper_aws\python.exe -m pip install "pymongo[srv]"
+root:ERROR:2022-09-13 22:51:57,088:local variable 'data' referenced before assignment
+Traceback (most recent call last):
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/db_ops/mongodb_ops.py", line 53, in fetch_data
+    results.append(data.next())
+UnboundLocalError: local variable 'data' referenced before assignment
+root:ERROR:2022-09-13 22:52:24,153:The "dnspython" module must be installed to use mongodb+srv:// URIs. To fix this error install pymongo with the srv extra:
+ C:\Users\DELL\anaconda3\envs\Videoscraper_aws\python.exe -m pip install "pymongo[srv]"
+Traceback (most recent call last):
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/db_ops/mongodb_ops.py", line 42, in fetch_data
+    f"mongodb+srv://{user}:{passwd}@cluster0.zeesz.mongodb.net/?retryWrites=true&w=majority")
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\pymongo\mongo_client.py", line 672, in __init__
+    connect_timeout=timeout)
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\pymongo\uri_parser.py", line 453, in parse_uri
+    '%s -m pip install "pymongo[srv]"' % (python_path))
+pymongo.errors.ConfigurationError: The "dnspython" module must be installed to use mongodb+srv:// URIs. To fix this error install pymongo with the srv extra:
+ C:\Users\DELL\anaconda3\envs\Videoscraper_aws\python.exe -m pip install "pymongo[srv]"
+root:ERROR:2022-09-13 22:52:24,159:local variable 'data' referenced before assignment
+Traceback (most recent call last):
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/db_ops/mongodb_ops.py", line 54, in fetch_data
+    results.append(data.next())
+UnboundLocalError: local variable 'data' referenced before assignment
+root:INFO:2022-09-13 22:52:54,661:Fetching data complete.
+root:INFO:2022-09-13 22:59:39,663:Fetching data from database 80000_Hours, table videodata...
+root:INFO:2022-09-13 22:59:42,263:Fetching data successful.
