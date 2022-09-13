@@ -64,7 +64,7 @@ def get_results():
                                       chrome_options=chrome_options)"""
             driver = get_driver()
 
-            channel2 = Channel(url, driver)          # create a channel object instance
+            """channel2 = Channel(url, driver)          # create a channel object instance
             channel2.get_channel_info(driver)        # get the channel details
             with open("channel_details.txt", 'w') as f:
                 f.write(str(num)+"\n"+url+"\n"+channel2.name+"\n"+"0")
@@ -73,7 +73,7 @@ def get_results():
             return "<p>%s</p>" %e
 
         logging.info("Input for channel name and videos number received. Rendering results.html...")
-        return render_template("results.html", name=channel2.name, subs= channel2.subscribers)
+        return render_template("results.html", name=channel2.name, subs= channel2.subscribers)"""
 
 @application.route('/get_urls', methods=['POST'])
 def get_urls():
