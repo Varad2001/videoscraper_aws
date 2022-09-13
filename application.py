@@ -34,7 +34,8 @@ def get_driver():
         #                     chrome_options=chrome_options)
     #driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),chrome_options=chrome_options)
     #driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
-    service = Service(executable_path=ChromeDriverManager().install())
+    #service = Service(executable_path=ChromeDriverManager().install())
+    service = Service(executable_path="/usr/bin/chromedriver")
     driver = webdriver.Chrome(service=service)
 
     return driver
@@ -64,10 +65,10 @@ def get_results():
                                       chrome_options=chrome_options)"""
             driver = get_driver()
 
-            """channel2 = Channel(url, driver)          # create a channel object instance
+            channel2 = Channel(url, driver)          # create a channel object instance
             channel2.get_channel_info(driver)        # get the channel details
             with open("channel_details.txt", 'w') as f:
-                f.write(str(num)+"\n"+url+"\n"+channel2.name+"\n"+"0")"""
+                f.write(str(num)+"\n"+url+"\n"+channel2.name+"\n"+"0")
         except Exception as e:
             logging.exception(e)
             return "<p>%s</p>" %e

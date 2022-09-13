@@ -104,3 +104,94 @@ GET_VIDEO_URLS FUNCTION COMPLETE.
 
 root:INFO:2022-09-13 21:06:41,800:Rendering get_urls.html....
 werkzeug:INFO:2022-09-13 21:06:43,828:127.0.0.1 - - [13/Sep/2022 21:06:43] "POST /get_urls HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-13 22:31:46,013:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-13 22:31:46,014:[33mPress CTRL+C to quit[0m
+root:INFO:2022-09-13 22:31:48,481:
+application running....rendering index.html...
+werkzeug:INFO:2022-09-13 22:31:48,485:127.0.0.1 - - [13/Sep/2022 22:31:48] "GET / HTTP/1.1" 200 -
+root:INFO:2022-09-13 22:31:51,077:Getting input for channel name and number of videos...
+WDM:INFO:2022-09-13 22:31:51,078:====== WebDriver manager ======
+WDM:INFO:2022-09-13 22:31:51,243:Get LATEST chromedriver version for google-chrome None
+WDM:INFO:2022-09-13 22:31:51,966:Driver [C:\Users\DELL\.wdm\drivers\chromedriver\win32\105.0.5195\chromedriver.exe] found in cache
+root:ERROR:2022-09-13 22:31:56,181:Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0029DF13+2219795]
+	Ordinal0 [0x00232841+1779777]
+	Ordinal0 [0x0014423D+803389]
+	Ordinal0 [0x00137DF8+753144]
+	Ordinal0 [0x00137AF6+752374]
+	Ordinal0 [0x0013706A+749674]
+	Ordinal0 [0x00135F94+745364]
+	Ordinal0 [0x00136528+746792]
+	Ordinal0 [0x0013F65E+783966]
+	Ordinal0 [0x0014A695+829077]
+	Ordinal0 [0x0014DA60+842336]
+	Ordinal0 [0x001367F6+747510]
+	Ordinal0 [0x0014A28F+828047]
+	Ordinal0 [0x0019F521+1176865]
+	Ordinal0 [0x0018E616+1107478]
+	Ordinal0 [0x00167F89+950153]
+	Ordinal0 [0x00168F56+954198]
+	GetHandleVerifier [0x00592CB2+3040210]
+	GetHandleVerifier [0x00582BB4+2974420]
+	GetHandleVerifier [0x00336A0A+565546]
+	GetHandleVerifier [0x00335680+560544]
+	Ordinal0 [0x00239A5C+1808988]
+	Ordinal0 [0x0023E3A8+1827752]
+	Ordinal0 [0x0023E495+1827989]
+	Ordinal0 [0x002480A4+1867940]
+	BaseThreadInitThunk [0x77A8FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C87A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C87A6E+238]
+	(No symbol) [0x00000000]
+Traceback (most recent call last):
+  File "C:/Users/DELL/Desktop/Python work/Videoscraper_aws/application.py", line 67, in get_results
+    channel2 = Channel(url, driver)          # create a channel object instance
+  File "C:\Users\DELL\Desktop\Python work\Videoscraper_aws\channel.py", line 18, in __init__
+    self.driver.get(url)
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\DELL\anaconda3\envs\Videoscraper_aws\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0029DF13+2219795]
+	Ordinal0 [0x00232841+1779777]
+	Ordinal0 [0x0014423D+803389]
+	Ordinal0 [0x00137DF8+753144]
+	Ordinal0 [0x00137AF6+752374]
+	Ordinal0 [0x0013706A+749674]
+	Ordinal0 [0x00135F94+745364]
+	Ordinal0 [0x00136528+746792]
+	Ordinal0 [0x0013F65E+783966]
+	Ordinal0 [0x0014A695+829077]
+	Ordinal0 [0x0014DA60+842336]
+	Ordinal0 [0x001367F6+747510]
+	Ordinal0 [0x0014A28F+828047]
+	Ordinal0 [0x0019F521+1176865]
+	Ordinal0 [0x0018E616+1107478]
+	Ordinal0 [0x00167F89+950153]
+	Ordinal0 [0x00168F56+954198]
+	GetHandleVerifier [0x00592CB2+3040210]
+	GetHandleVerifier [0x00582BB4+2974420]
+	GetHandleVerifier [0x00336A0A+565546]
+	GetHandleVerifier [0x00335680+560544]
+	Ordinal0 [0x00239A5C+1808988]
+	Ordinal0 [0x0023E3A8+1827752]
+	Ordinal0 [0x0023E495+1827989]
+	Ordinal0 [0x002480A4+1867940]
+	BaseThreadInitThunk [0x77A8FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77C87A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C87A6E+238]
+	(No symbol) [0x00000000]
+
+werkzeug:INFO:2022-09-13 22:31:59,312:127.0.0.1 - - [13/Sep/2022 22:31:59] "POST /results HTTP/1.1" 200 -
